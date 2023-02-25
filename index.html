@@ -17,7 +17,6 @@
         input {padding: 10px; min-width: 150px;}
         button {padding: 10px;}
     </style>
-
 </head>
 <body>
 <table>
@@ -31,7 +30,7 @@
             <pre>S = a * a</pre>
             <form id = "main">
                 <input type="number" id="dlinaStoroniKvadrata" name="dlinaStoroniKvadrata" placeholder="Длина стороны">
-                <button type="button" onclick="showResultInDomKvadrat()">Результат</button>
+                <button  id="b1"  type="button">Результат</button>
             </form>
         </td>
         <td id="ploschadKvadrata"></td>
@@ -47,7 +46,7 @@
             <form>
                 <input type="number" id="pervayaStoronaPriamougolnika" name="pervayaStoronaPriamougolnika" placeholder="Одна сторона">
                 <input type="number" id="drugayaStoronaPriamougolnika" name="drugayaStoronaPriamougolnika" placeholder="Другая сторона">
-                <button type="button" onclick="showResultInDomPriamougolnika()">Результат</button>
+                <button id="b2" type="button">Результат</button>
             </form>
         </td>
         <td id="ploschadPriamougolnika"></td>
@@ -63,7 +62,7 @@
             <form>
                 <input type="number" id="dlinaStoronyParalelograma" name="dlinaStoronyParalelograma" placeholder="Длина стороны">
                 <input type="number" id="dlinaVisotyParalelograma" name="dlinaVisotyParalelograma" placeholder="Длина высоты">
-                <button type="button" onclick="showResultInDomParalelograma()">Результат</button>
+                <button id="b3"  type="button" >Результат</button>
             </form>
         </td>
         <td id="ploschadParalelograma"></td>
@@ -79,13 +78,12 @@
             <form>
                 <input type="number" id="dlinaStoronyRomba" name="dlinaStoronyRomba" placeholder="Длина стороны">
                 <input type="number" id="dlinaVisotyRomba" name="dlinaVisotyRomba" placeholder="Длина высоты">
-                <button type="button" onclick="showResultInDomRomba()">Результат</button>
+                <button id="b4"  type="button">Результат</button>
             </form>
         </td>
         <td id="ploschadRomba"></td>
     </tr>
 </table>
-<script src="js/libraryFormula.js"></script>
-<script src="js/domOperations.js"></script>
+<script type="module" src="js/domOperations.js"></script>
 </body>
 </html>

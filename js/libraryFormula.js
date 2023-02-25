@@ -1,4 +1,4 @@
- export function ResultInDomKvadrat(a) {
+ export function ResultInDomKvadrat(a){
      return  a*a;
 }
  export function ResultInDomPriamougolnika(a,b){
