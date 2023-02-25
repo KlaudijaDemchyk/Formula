@@ -17,6 +17,7 @@
         input {padding: 10px; min-width: 150px;}
         button {padding: 10px;}
     </style>
+
 </head>
 <body>
 <table>
@@ -28,7 +29,7 @@
             <h1>Формулы площади квадрата</h1>
             <div>Площадь квадрата равна квадрату длины его стороны</div>
             <pre>S = a * a</pre>
-            <form>
+            <form id = "main">
                 <input type="number" id="dlinaStoroniKvadrata" name="dlinaStoroniKvadrata" placeholder="Длина стороны">
                 <button type="button" onclick="showResultInDomKvadrat()">Результат</button>
             </form>
@@ -49,7 +50,7 @@
                 <button type="button" onclick="showResultInDomPriamougolnika()">Результат</button>
             </form>
         </td>
-        <td id="ploschadPriamougolnika">1000</td>
+        <td id="ploschadPriamougolnika"></td>
     </tr>
     <tr>
         <td>
@@ -84,6 +85,7 @@
         <td id="ploschadRomba"></td>
     </tr>
 </table>
-
+<script src="js/libraryFormula.js"></script>
+<script src="js/domOperations.js"></script>
 </body>
 </html>
