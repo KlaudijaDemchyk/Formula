@@ -4,28 +4,28 @@ import {ResultInDomParalelograma} from "./libraryFormula.js";
 import {ResultInDomRomba} from "./libraryFormula.js";
 document.getElementById('b1').onclick =showResultInDomKvadrat;
 function showResultInDomKvadrat(){
-    const a = document.getElementById('dlinaStoroniKvadrata').value;
-    const result = ResultInDomKvadrat(a);
+    const squareSide = document.getElementById('dlinaStoroniKvadrata').value;
+    const result = ResultInDomKvadrat(squareSide);
     document.getElementById ('ploschadKvadrata').textContent = result;
 }
 document.getElementById('b2').onclick =showResultInDomPriamougolnika;
 function showResultInDomPriamougolnika(){
-    const a = document.getElementById('pervayaStoronaPriamougolnika').value;
-    const b = document.getElementById('drugayaStoronaPriamougolnika').value;
-    const result = ResultInDomPriamougolnika(a,b);
+    const squareSide = document.getElementById('pervayaStoronaPriamougolnika').value;
+    const squareSide2 = document.getElementById('drugayaStoronaPriamougolnika').value;
+    const result = ResultInDomPriamougolnika(squareSide,squareSide2);
     document.getElementById ('ploschadPriamougolnika').textContent = result;
 }
 document.getElementById('b3').onclick =showResultInDomParalelograma;
 function showResultInDomParalelograma(){
-    const a = document.getElementById('dlinaStoronyParalelograma').value;
-    const h = document.getElementById ('dlinaVisotyParalelograma').value;
-    const result = ResultInDomParalelograma(a,h);
+    const squareSide = document.getElementById('dlinaStoronyParalelograma').value;
+    const squareHeight = document.getElementById ('dlinaVisotyParalelograma').value;
+    const result = ResultInDomParalelograma(squareSide,squareHeight);
     document.getElementById ('ploschadParalelograma').textContent = result;
 }
 document.getElementById('b4').onclick =showResultInDomRomba;
 function showResultInDomRomba(){
-    const a = document.getElementById('dlinaStoronyRomba').value;
-    const h = document.getElementById ('dlinaVisotyRomba').value;
-    const result = ResultInDomRomba(a,h);
+    const squareSide = document.getElementById('dlinaStoronyRomba').value;
+    const squareHeight = document.getElementById ('dlinaVisotyRomba').value;
+    const result = ResultInDomRomba(squareSide,squareHeight);
     document.getElementById ('ploschadRomba').textContent = result;
 }
